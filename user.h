@@ -1,5 +1,6 @@
 struct stat;
 struct rtcdate;
+extern int read_count;
 
 // system calls
 int fork(void);
@@ -24,6 +25,7 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 int wcupa(void);
+int getreadcount(void);
 
 // ulib.c
 int stat(const char*, struct stat*);

@@ -1,4 +1,5 @@
 // Routines to let C code use special x86 instructions.
+extern int read_count;
 
 static inline uchar
 inb(ushort port)
